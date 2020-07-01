@@ -1,0 +1,60 @@
+.modal {
+    position       : fixed;
+    z-index        : 999;
+    width          : 100vw;
+    height         : 100vh;
+    background     : rgba($color: #000000, $alpha: .1);
+    justify-content: center;
+    align-items    : center;
+    display: none;
+    &--active{
+        display        : flex;
+    }
+    &__inner {
+        width          : 320px;
+        height         : 198px;
+        background     : #ffffff;
+        padding        : 24px;
+        display        : flex;
+        flex-direction : column;
+        justify-content: space-between;
+    }
+
+    &__header {}
+
+    &__title {
+        font-weight   : normal;
+        font-size     : 20px;
+        line-height   : 28px;
+        color         : #3B3B3B;
+        padding-bottom: 16px;
+    }
+
+    &__text {
+        font-weight: normal;
+        font-size  : 14px;
+        line-height: 18px;
+        color      : #3B3B3B;
+    }
+
+    &__buttons {
+        width          : 100%;
+        display        : flex;
+        justify-content: space-between;
+    }
+
+    &__button {
+        font-weight: 600;
+        font-size  : 16px;
+        line-height: 20px;
+        cursor: pointer;
+
+        &--cancel {
+            color: #B9B9B9;
+        }
+
+        &--delete {
+            color: #82B284;
+        }
+    }
+}

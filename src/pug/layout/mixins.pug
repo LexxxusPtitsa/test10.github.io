@@ -1,0 +1,7 @@
+mixin programmNavLink(link, name, first)
+    if(first)
+        li.programm__nav-li.programm__nav-li--active
+            a(href=link).programm__nav-link.programm__nav-link--active=name
+    else
+        li.programm__nav-li
+            a(href=link).programm__nav-link=name
